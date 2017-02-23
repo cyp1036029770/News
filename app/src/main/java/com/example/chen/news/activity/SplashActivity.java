@@ -12,14 +12,14 @@ import com.example.chen.news.base.BaseActivity;
  * Created by chen on 2017/2/16.
  */
 
-public class SplashActivity extends BaseActivity {
+public class SplashActivity2 extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity2.this, MainActivity.class));
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 finish();
             }
